@@ -1,0 +1,13 @@
+
+<!--pages/location/event-grid/event-grid.wxml-->
+<template name="event-grid-template">
+  <view class="event-wrapper" bindtap="handleEventTap" data-id="{{even.id}}">
+    <view class="event-content">
+      <image class="event-poster" src="{{even.image}}"></image>
+      <view class="event-summary">
+        <text class="event-title">{{even.title}}</text>
+        <text class="event-time">{{even.time_str}}</text>
+      </view>
+    </view>
+  </view>
+</template>
